@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="accv, workshop, computer vision, multispectral camera, autonomous driving, sensors, machine learning">
+
+  <link rel="shortcut icon" href="static/img/site/favicon_mira2.ico">
+
+  <title>ACCV2024 Workshop on Multispectral Imaging for Robotics and Automation (MIRA)</title>
+  <meta name="description" content="Use of multispectral cameras for robotics and automation, ACCV 2024 Workshop">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Workshop on Multispectral Imaging for Robotics and Automation (MIRA)"/>
+  <meta property="og:url" content="https://multispectral4ra.github.io/"/>
+  <meta property="og:description" content="Use of multispectral cameras for robotics and automation, ACCV 2024 Workshop"/>
+  <meta property="og:site_name" content="Workshop on Multispectral Imaging for Robotics and Automation (MIRA)"/>
+  <meta property="og:image" content="https://multispectral4ra.github.io/static/img/site/cover.png"/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Workshop on Multispectral Imaging for Robotics and Automation (MIRA)"/>
+  <meta name="twitter:image" content="https://multispectral4ra.github.io/static/img/site/cover.png">
+  <meta name="twitter:url" content="https://multispectral4ra.github.io/"/>
+  <meta name="twitter:description" content="Use of multispectral cameras for robotics and automation, ACCV 2024 Workshop"/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+  <style>
+    .time-column {
+      width: 180px; /* Adjust the width as needed */
+    }
+  </style>
+
+<style>
+  .presenter-column {
+    width: 320px; /* Adjust the width as needed */
+  }
+</style>
+
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row" id="title">
+  <div class="col-xs-12">
+    <center><h1>Workshop on <br>Multispectral Imaging for Robotics and Automation <br>(MIRA)</h1></center>
+    <center><h2>co-located with <a style="color: #22296d; font-weight:bold;" href="https://www.accv2024.org/"> ACCV 2024</a> and <a style="color: #5a5ca9; font-weight:bold;" href="https://www.acml-conf.org/2024/">ACML 2024</a></h2></center>
+    <center><h3>Hanoi, Vietnam - December 8th, 2024 - 09:00 - 13:00 (Saigon Hall)</h3></center>
+  </div>
+</div>
+
+<hr />
+
+<!--
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="../ACCV2022/index.html" target="__blank">ACCV 2022</a></li>
+  </ul>
+</li>
+-->
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br> -->
+
+<!-- 
+<div class="alert alert-info" role="alert">
+  <b>For online participation Join the Zoom Meeting from <a href="http://stl.yonsei.ac.kr/">here</a>.</b>
+</div>
+-->
+
+
+<div class="row" id="teaser">  
+    <div>  
+    <img src="static/img/site/mira_cover2.png" style="width: 100%; height: auto;"/>
+  </div>
+</div>
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Multispectral imaging is revolutionizing the fields of robotics and automation by providing richer information beyond the visible spectrum. Traditional RGB cameras capture only a narrow band of the electromagnetic spectrum, limiting the data available for computer vision systems. Multispectral cameras expand this capability by sensing light across a broader range of wavelengths, including infrared, ultraviolet, and other portions of the spectrum invisible to the human eye.
+      <br><br>
+      This additional spectral information unlocks powerful new applications in robotics and automation. Multispectral data can be used for enhanced material classification, detecting various objects, identifying chemical signatures, and perceiving environmental factors like moisture and temperature. Additionally, in autonomous driving, multispectral imaging allows vehicles to detect lane markings better, read traffic signals, and identify obstacles in challenging conditions like adverse weather situations and darkness. Such capabilities have transformative potential for industrial inspection, agricultural automation, search and rescue operations, self-driving cars, and countless other domains.
+      <br><br>
+      The Multispectral Imaging for Robotics and Automation (MIRA) workshop aims to bring together leading researchers exploring this emerging interdisciplinary area at the intersection of multispectral imaging, computer vision, robotics, and automation. 
+      <br><br>
+      Join us to discuss the latest breakthroughs, share cutting-edge research, and forge new collaborations driving innovation in this exciting field.
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call For Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      <p>
+        We invite researchers and practitioners to submit original and unpublished work to the Multispectral Imaging for Robotics and Automation (MIRA) workshop. Relevant topics include but are not limited to:
+      </p>
+      <ul>
+        <li>Multispectral image acquisition and sensor fusion</li>
+        <li>Multispectral object detection, tracking, and segmentation</li>
+        <li>Industrial inspection with multispectral vision</li>
+        <li>Agricultural monitoring and automation</li>
+        <li>Non-line-of-sight imaging for autonomous vehicles</li>
+        <li>Multispectral perception for adverse weather conditions</li>
+        <li>Novel applications of multispectral data in robotics and automation</li>
+        <li>Multispectral image reconstruction</li>
+        <li>Spectral unmixing and material classification</li>
+        <li>Domain adaptation and transfer learning for multispectral data</li>
+        <li>Multispectral dataset curation and benchmarking</li>
+      </ul>
+      <p>
+        <u>Paper Submission Guidelines:</u>
+        <br> 
+        To submit papers for consideration, please utilize the workshop's CMT website: <a style="color:#1a1aff;font-weight:400;" href="https://cmt3.research.microsoft.com/MIRA2024">https://cmt3.research.microsoft.com/MIRA2024.</a>  All submissions should be in PDF format.
+        <br> 
+        Papers that have been previously published or are currently under review elsewhere will not be accepted. It is imperative that submissions adhere to the formatting standards outlined by the Asian Conference on Computer Vision (ACCV), which can be found at <a style="color:#1a1aff;font-weight:400;" href="https://accv2024.org/author-guidelines/">https://accv2024.org/author-guidelines/.</a>
+        <br>
+        For consistency, papers must use the ACCV LaTeX template and should not exceed 14 pages, including figures and tables. However, additional pages are permissible solely for references.
+        <br>
+        You can access the official ACCV LaTeX template files by cloning the template from this <a style="color:#1a1aff;font-weight:400;" href="https://www.overleaf.com/read/xzbzbmyfrjks#04841c">overleaf project</a> or downloading this <a style="color:#1a1aff;font-weight:400;" href="https://drive.google.com/file/d/1zQFrAh4C26MJQaHclV3ljngCAySSq7SH/view?usp=sharing">zip file</a>.
+        <br>
+        All accepted papers are going to be published in the <a style="color:#1a1aff;font-weight:400;" href="https://openaccess.thecvf.com/ACCV2024_workshops">ACCV 2024 Workshop proceedings</a> and <a style="color:#1a1aff;font-weight:400;" href="https://link.springer.com/conference/accv">Springer ACCV 2024 Workshop LNCS</a>.
+        <br>
+        <u>Important note: PDF files must be under 20MB.</u>
+      </p>
+  </div>
+</div>
+
+
+<p><br /></p>
+
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Call for papers announced</td>
+          <td>July 9, 2024</td>
+        </tr>
+        <tr>
+          <td>Paper submission deadline</td>
+          <td><b><del>September 14, 2024</del></b></td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted papers</td>
+          <td><del>September 20, 2024</del></td>
+        </tr>
+        <tr>
+          <td>Paper camera ready</td>
+          <td><del>September 30, 2024</del></td>
+        </tr>
+        <tr>
+          <td>Workshop date</td>
+          <td><b>December 8, 2024 <i> - 09:00 - 13:00 (Saigon Hall)</i></b></td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule (Hanoi, Vietnam / Indochina Time Zone (ICT) (*GMT +7))</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+     <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="time-column">Time</th>
+          <th>Presenter</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time-column">09:00 AM - 09:15 AM</td>
+          <td class="presenter-column"><b>Shiho Kim</b><i>, Yonsei University</i></td>
+          <td><i>Opening Remarks</i></td>
+        </tr>
+        <tr>
+          <td class="time-column">09:20 AM - 10:00 AM</td>
+          <td class="presenter-column"><b>Kailun Yang</b><i>, Hunan University (HNU)</i></td>
+          <td><b><i style="color: #5B92E5;">"Towards Holistic Scene Understanding for Autonomous Driving" <a style="color: #e29118;" href="https://multispectral4ra.github.io/static/pdf/Kailun_Yang_MIRA_presentation.pdf">(pdf)</a> - <a style="color: #24ad46;" href="https://1drv.ms/v/s!AheKGGgXtJ5xfdsM43Pb9YucfCA?e=M2QgQz">(Video)</a></i></b></td>
+        </tr>
+        <tr>
+          <td class="time-column">10:00 AM - 10:30 AM</td>
+          <td class="presenter-column"></td>
+          <td><i>Coffee Break</i></td>
+        </tr>
+        <tr>
+          <td class="time-column">10:30 AM - 11:10 AM</td>
+          <td class="presenter-column"><b>Ukcheol Shin</b><i>, Carnegie Mellon University</i></td>
+          <td><b><i style="color: #5B92E5;">"Visual Perception from Thermal Image" <a style="color: #e29118;" href="https://multispectral4ra.github.io/static/pdf/Ukcheol_Shin_MIRA_presentation.pdf">(pdf)</a> - <a style="color: #24ad46;" href="https://1drv.ms/v/s!AheKGGgXtJ5xfDeiW3pb5-U6rYA?e=4DKUvt">(Video)</a></i></b></td>
+        </tr>
+        <tr>
+          <td class="time-column">11:10 AM - 11:50 AM</td>
+          <td class="presenter-column"><b>Rui Fan</b><i>, Tongji University</i></td>
+          <td><b><i style="color: #5B92E5;">"RGB+X Scene Parsing: Five Years of Explorations by the MIAS Group" <a style="color: #e29118;" href="https://multispectral4ra.github.io/static/pdf/Rui_Fan_MIRA_presentation.pdf">(pdf)</a> - <a style="color: #24ad46;" href="https://1drv.ms/v/s!AheKGGgXtJ5xfloqU6bKwQ4uwsE?e=quyN4i">(Video)</a></i></b></td>
+        </tr>
+        <tr>
+          <td class="time-column">11:50 AM - 12:30 PM</td>
+          <td class="presenter-column"><b>Ashutosh Mishra</b><i>, BITS Pilani</i></td>
+          <td><b><i style="color: #5B92E5;">"Multispectral Imaging for Autonomous Vehicles" </i><a style="color: #24ad46;" href="https://1drv.ms/v/s!AheKGGgXtJ5xe9TzqcvHudIv62w?e=AwZalh">(Video)</a></b></td>
+        <tr>
+          <td class="time-column">12:30 PM - 12:40 PM</td>
+          <td class="presenter-column">MIRA Organizing Committee</td>
+          <td><i>Concluding remarks</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="speaker-img-container">
+      <a href="https://yangkailun.com/"><img class="people-pic" src="static/img/people/prof_yang.jpg" /></a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <p>
+      <b><a href="https://yangkailun.com/">Kailun Yang (Hunan University (HNU))</a></b> Kailun Yang is a Professor at the School of Robotics and the National Engineering Research Center of Robot Visual Perception and Control Technology at Hunan University. He earned his PhD in Information Sensing and Instrumentation from Zhejiang University, where he was jointly supervised by experts from Zhejiang University and the University of Alcalá. Prior to his PhD, he completed dual B.S. degrees in Measurement Technology and Instrumentation from Beijing Institute of Technology and Economics from Peking University. His postdoctoral research at the CV
+      Lab, Karlsruhe Institute of Technology, focused on human-computer interaction under the guidance of Prof. Rainer Stiefelhagen. Kailun Yang's research spans multimodal, high-dimensional, and full-view computational optics and vision, with applications in autonomous driving, blind assistance, intelligent transportation systems, and motion analysis. He has made countless contributions to the field of multispectral imaging, with notable works such as <i>ACNet: Attention Based Network to Exploit Complementary Features for RGBD Semantic Segmentation</i>, <i>CMX: Cross-Modal Fusion for RGB-X Semantic Segmentation with Transformers</i>, and <i>CFMW: Cross-Modality Fusion Mamba for Multispectral Object Detection under Adverse Weather Conditions</i>.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="speaker-img-container">
+      <a href="https://www.ruirangerfan.com/"><img class="people-pic" src="static/img/people/rfan.jpg" /></a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <p>
+      <b><a href="https://www.ruirangerfan.com/">Rui Fan (Tongji University)</a></b> Rui Fan received the B.Eng. degree in Automation from the Harbin Institute of Technology in 2015 and the Ph.D. degree in Electrical and Electronic Engineering from the University of Bristol in 2018. He worked as a Research Associate at the Hong Kong University of Science and Technology from 2018 to 2020 and a Postdoctoral Scholar-Employee at the University of California San Diego between 2020 and 2021. He began his faculty career as a Full Research Professor with the College of Electronics & Information Engineering at Tongji University in 2021, and was then promoted to a Full Professor in the same college, as well as at the Shanghai Research Institute for Intelligent Autonomous Systems in 2022. 
+      Prof. Fan served as an associate editor for ICRA'23/25 and IROS'23/24, an area chair for ICIP'24, and a senior program committee member for AAAI'23/24/25. He is the general chair of the AVVision community and organized several impactful workshops and special sessions in conjunction with WACV'21, ICIP'21/22/23, ICCV'21, and ECCV'22. He was honored by being included in the Stanford University List of Top 2% Scientists Worldwide between 2022 and 2024, recognized on the Forbes China List of 100 Outstanding Overseas Returnees in 2023, and acknowledged as one of Xiaomi Young Talents in 2023. His research interests include computer vision, deep learning, and robotics, with a specific focus on humanoid visual perception under the two-streams hypothesis.
+     </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="speaker-img-container">
+      <a href="https://ukcheolshin.github.io/"><img class="people-pic" src="static/img/people/ukcheolshin.jpg" /></a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <p>
+      <b><a href="https://ukcheolshin.github.io/">Ukcheol Shin (Carnegie Mellon University)</a></b> Ukcheol Shin is a postdoctoral researcher at the Robotics Institute of Carnegie Mellon University. His research focuses on developing a robust robot vision system that can perceive and navigate the dynamic world, even in challenging conditions, with a particular interest in self-supervised learning of 3D geometry and multi-sensor fusion. Dr. Shin has made significant contributions to the field of multispectral imaging, with a focus on topics such as thermal image segmentation and depth estimation on thermal images. Furthermore, he is one of the authors of the MS2 dataset, a valuable resource for the research community.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="speaker-img-container">
+      <a href="https://stl.yonsei.ac.kr/"><img class="people-pic" src="static/img/people/profmishra.jpg" /></a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <p>
+      <b><a href="https://sites.google.com/yonsei.ac.kr/ashutoshmishra">Ashutosh Mishra (BITS Pilani)</a></b> Ashutosh Mishra is an academic and researcher specializing in Intelligent Systems. He holds a B.Tech. from Uttar Pradesh Technical University (2008), an M.Tech. from NIT Allahabad (2011), and a Ph.D. from IIT (BHU) Varanasi (2018). He was an Assistant Professor at NIT Raipur and received the Korea Research Fellowship in 2019. From 2019 to 2023, he was a Brain Pool Fellow at Yonsei University, South Korea. Currently, he is an Assistant Professor in the Department of Electrical & Electronics Engineering at BITS Pilani, Dubai. His research interests include smart sensors, intelligent systems, autonomous vehicles, convergence technology, and artificial intelligence.
+    </p>
+  </div>
+</div>
+
+
+<!-- <p><br /></p>
+<div class="row" id="accepted">
+  <div class="col-xs-12">
+    <h2>Accepted Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table>
+      <tbody> 
+      <tr><td><a href="https://arxiv.org/abs/2212.01558">#1. PartSLIP: Low-Shot Part Segmentation for 3D Point Clouds via Pretrained Image-Language Models</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Minghua Liu, Yinhao Zhu, Hong Cai, Shizhong Han, Zhan Ling, Fatih Porikli, Hao Su</font></td></tr>
+    </tbody></table>
+  </div>
+
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      <li><a href="https://ynalcakan.github.io/">Dr. Yağız Nalçakan</a> - Seamless Trans-X Lab - Yonsei University</li>
+      <li><a href="https://stl.yonsei.ac.kr/">Yeongwan Jin</a> - Seamless Trans-X Lab - Yonsei University</li>
+      <li><a href="https://stl.yonsei.ac.kr/">Hyeongjin Ju</a> - Seamless Trans-X Lab - Yonsei University</li>
+      <li><a href="https://stl.yonsei.ac.kr/">Hanbin Song</a> - Seamless Trans-X Lab - Yonsei University</li>
+      <li><a href="https://stl.yonsei.ac.kr/">Incheol Park</a> - Seamless Trans-X Lab - Yonsei University</li>
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Program Committee</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      <li><a href="https://stl.yonsei.ac.kr/theme/s007/index/sub1_2.php">Prof. Shiho Kim (program chair)</a> - Yonsei University</li>
+      <li>Prof. Guofa Li - Chongqing University</li>
+      <li>Prof. Chih-Hsien Hsia - National Ilan University</li>
+      <li>Dr. Ashutosh Mishra - Birla Institute of Technology and Science</li>
+      <li>Dr. Jianwu Fang - Chang'an University</li>
+      <li>Dr. Jifeng Shen - Jiangsu University</li>
+      <li>Dr. Di Yuan - Xidian University</li>
+      
+    </p>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <a href="mailto:multispectral4ra@outlook.com">multispectral4ra@outlook.com</a>
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://visualdialog.org/">visualdialog.org</a></span> and <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/"> L3DS workshop team</a></span> for the webpage format.
+    </p>
+  </div>
+  <div class="col-xs-3" style="width: 200px; height: 150px; display: flex; align-items: center; justify-content: center;">
+    <a href="https://www.yonsei.ac.kr/">
+      <img src="static/img/site/yonsei-university-logo.jpg"/>
+    </a>
+  </div>
+
+  <div class="col-xs-3" style="width: 150px; height: 150px; display: flex; align-items: center; justify-content: center;">
+    <a href="https://stl.yonsei.ac.kr/">
+      <img src="static/img/site/stl-logo-blue.png"/>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+      </div>
+    </div>
+
+  </body>
+</html>

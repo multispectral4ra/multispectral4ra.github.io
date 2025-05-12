@@ -4,7 +4,7 @@ body {
     font-weight: 300;
     -webkit-font-smoothing: subpixel-antialiased;
     color: #333;
-    padding-top: 70px;
+    padding-top: 100px;
   }
   
   body *::selection {
@@ -219,4 +219,51 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  /* Add these new rules */
+  .navbar-nav > li > a {
+    padding: 25px 10px;  /* Reduce horizontal padding */
+    font-size: 15px;     /* Slightly reduce font size */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;   /* Prevent wrapping to next line */
+  }
+
+  .navbar .container {
+    width: 100%;         /* Allow container to use full width if needed */
+    padding-left: 30px;  /* Add some padding from the left edge */
+    padding-right: 30px; /* Add some padding from the right edge */
+  }
+
+  /* Fix for underlined links in speakers and organizers sections */
+  #speakers a,
+  #organizers a {
+    border-bottom: none !important;
+  }
+  
+  .people-name a {
+    border-bottom: none !important;
+  }
+
+  /* Additional more specific rules for keynote speakers */
+  #speakers .col-md-8 a {
+    border-bottom: none !important;
+  }
+  
+  #speakers .row a {
+    border-bottom: none !important;
+  }
+
+  #speakers p a,
+  #speakers b a {
+    border-bottom: none !important;
+  }
+
+  /* Brute force approach for speaker links */
+  #speakers * a {
+    border-bottom: 0 !important;
+    text-decoration: none !important;
   }
