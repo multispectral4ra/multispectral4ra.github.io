@@ -125,18 +125,8 @@ body {
     justify-content: center;
     margin: 0 auto;
   }
-  
-  .people-pic {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    position: relative;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-  
-  /* Add this new rule */
+
+    /* Add this new rule */
   .speaker-img-container a {
     border-bottom: none;
     display: flex;
@@ -149,16 +139,245 @@ body {
     left: 0;
   }
   
-  .people-name {
-    margin: 5px 0 10px;
+  .people-pic {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Keep organizer profile pictures larger on smaller screens */
+  #organizers .people-pic {
+    min-width: 120px;
+    min-height: 120px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* New container for organizer images */
+  .organizer-img-container {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  .organizer-img-container img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: none;
+    transform: scale(1.0);
+  }
+  
+  /* Override Bootstrap column widths for organizer section */
+  #organizers + .container .col-xs-2 {
+    width: 25%; /* Make columns show 4 per row (changed from 20%) */
+    padding: 0 20px;
+    margin-bottom: 40px;
+    float: left;
+    display: block;
+    position: relative;
+    border: none !important;
+  }
+  
+  /* Remove any horizontal dividers or borders that might be causing lines */
+  #organizers + .container .col-xs-2::before,
+  #organizers + .container .col-xs-2::after,
+  #organizers + .container .people-name::before,
+  #organizers + .container .people-name::after,
+  #organizers + .container a::before,
+  #organizers + .container a::after {
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+    content: none !important;
+  }
+  
+  /* Explicitly remove all link borders in organizer section */
+  #organizers + .container a,
+  #organizers a,
+  .people-name a {
+    border: 0 !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  /* Fix for organizer image spacing */
+  #organizers + .container .row {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1000px;
+    border: none !important;
     text-align: center;
   }
   
-  .people-name h6 {
+  /* Better row handling for 4-column layout */
+  #organizers + .container .col-xs-2:nth-child(4n+1) {
+    clear: left; /* Clear every 4th item to ensure proper row breaks */
+  }
+  
+  /* Responsive styles for organizer images */
+  @media (max-width: 992px) {
+    #organizers + .container .people-pic {
+      min-width: 150px;
+      min-height: 150px;
+      width: 150px;
+      height: 150px;
+    }
+    
+    .organizer-img-container {
+      width: 150px;
+      height: 150px;
+    }
+    
+    #organizers + .container .col-xs-2 {
+      width: 33.33%; /* 3 columns per row on medium-sized screens */
+      margin-bottom: 40px;
+    }
+    
+    /* Clear every 3rd item on medium screens */
+    #organizers + .container .col-xs-2:nth-child(4n+1) {
+      clear: none;
+    }
+    
+    #organizers + .container .col-xs-2:nth-child(3n+1) {
+      clear: left;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #organizers + .container .people-pic {
+      min-width: 120px;
+      min-height: 120px;
+      width: 120px;
+      height: 120px;
+    }
+    
+    .organizer-img-container {
+      width: 120px;
+      height: 120px;
+    }
+    
+    #organizers + .container .col-xs-2 {
+      width: 50%; /* Exactly 2 columns per row on smaller screens */
+      padding: 0 30px;
+    }
+    
+    /* Clear every 2nd item on small screens */
+    #organizers + .container .col-xs-2:nth-child(3n+1) {
+      clear: none;
+    }
+    
+    #organizers + .container .col-xs-2:nth-child(2n+1) {
+      clear: left;
+    }
+    
+    /* Add more spacing between rows */
+    #organizers + .container .col-xs-2:nth-child(1),
+    #organizers + .container .col-xs-2:nth-child(2),
+    #organizers + .container .col-xs-2:nth-child(3),
+    #organizers + .container .col-xs-2:nth-child(4),
+    #organizers + .container .col-xs-2:nth-child(5),
+    #organizers + .container .col-xs-2:nth-child(6) {
+      margin-bottom: 50px;
+    }
+  }
+  
+  /* Image container for organizers */
+  #organizers + .container a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none !important;
+  }
+  
+  /* Fix people-name alignment */
+  .people-name {
+    margin: 5px 0 10px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: block;
+  }
+  
+  .people-name h5 {
     margin: 2px 0;
     font-weight: 300;
-    font-size: 11px;
-    text-align: center;
+  }
+
+  /* Responsive styles for people-name */
+  @media (max-width: 992px) {
+    .people-name {
+      margin: 4px 0 8px;
+    }
+    
+    .people-name h5 {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .people-name {
+      margin: 3px 0 6px;
+    }
+    
+    .people-name h5 {
+      font-size: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .people-name {
+      margin: 2px 0 4px;
+    }
+    
+    .people-name h5 {
+      font-size: 9px;
+    }
+
+    /* Special handling for very long affiliations */
+    .people-name h5 {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+    }
+    
+    /* Target specific long affiliations without using :contains */
+    h5[title*="Karlsruhe"], 
+    h5[title*="Forschungszentrum"],
+    .people-name h5:nth-child(2) {
+      font-size: 7px;
+      line-height: 1.2;
+    }
+  }
+  
+  /* Alternative responsive approach using viewport width units */
+  @media (max-width: 767px) {
+    .people-name a {
+      font-size: calc(10px + 0.5vw);
+    }
+    
+    .people-name h5 {
+      font-size: calc(8px + 0.3vw);
+    }
   }
   
   #sequence {
@@ -266,4 +485,29 @@ body {
   #speakers * a {
     border-bottom: 0 !important;
     text-decoration: none !important;
+  }
+
+  #organizers + .container a::after {
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+    content: none !important;
+  }
+  
+  /* Improve organizer layout on smaller screens */
+  @media (max-width: 768px) {
+    /* Ensure organizers are neatly paired in rows of 2 */
+    #organizers + .container .col-xs-2:nth-child(odd) {
+      clear: left;
+    }
+    
+    /* Add more spacing between rows */
+    #organizers + .container .col-xs-2:nth-child(1),
+    #organizers + .container .col-xs-2:nth-child(2),
+    #organizers + .container .col-xs-2:nth-child(3),
+    #organizers + .container .col-xs-2:nth-child(4),
+    #organizers + .container .col-xs-2:nth-child(5),
+    #organizers + .container .col-xs-2:nth-child(6) {
+      margin-bottom: 50px;
+    }
   }
