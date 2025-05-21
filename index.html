@@ -500,11 +500,38 @@
   </div>
 </div>
 
-<div class="container" style="margin-top: 20px">
-  <!-- All organizers in one flexible row -->
-  <div class="row" style="border: none;">
-    <!-- Row 1 - First 2 people -->
-    <div class="col-xs-2" style="border: none;">
+<style>
+  /* Keep 5+4 layout on large screens, adjust for smaller screens */
+  @media (min-width: 992px) {
+    .organizers-container .large-screen-row-1 {
+      display: flex;
+      justify-content: center;
+    }
+    .organizers-container .large-screen-row-2 {
+      display: flex;
+      justify-content: center;
+    }
+    .organizers-container .person-col {
+      width: 20%; /* 5 in first row */
+    }
+    .organizers-container .large-screen-row-2 .person-col {
+      width: 25%; /* 4 in second row */
+    }
+  }
+  
+  /* Tablet and smaller devices: 2 per row */
+  @media (max-width: 991px) {
+    .organizers-container .person-col {
+      width: 50%;
+      float: left;
+    }
+  }
+</style>
+
+<div class="container organizers-container" style="margin-top: 20px">
+  <!-- First row - 5 people on large screens, 2 per row on small screens -->
+  <div class="row large-screen-row-1" style="border: none; margin-bottom: 30px;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://stl.yonsei.ac.kr/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/shiho_kim.jpg" width="175" height="175" />
@@ -516,7 +543,7 @@
       </div>
     </div>
 
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://ynalcakan.github.io/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/yagiz.jpg" width="175" height="175" />
@@ -528,8 +555,7 @@
       </div>
     </div>
 
-    <!-- Row 2 - Next 2 people -->
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://www.ruirangerfan.com/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/rui_fan.jpg" width="175" height="175" />
@@ -541,7 +567,7 @@
       </div>
     </div>
 
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://yangkailun.com/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/kailun_yang.jpg" width="175" height="175" />
@@ -553,8 +579,7 @@
       </div>
     </div>
 
-    <!-- Row 3 - Next person -->
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://cvrg-iyte.github.io/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/yalin_bastanlar.jpg" width="175" height="175" />
@@ -565,9 +590,23 @@
         <h5>Izmir Institute of Technology</h5>
       </div>
     </div>
+  </div>
 
-    <!-- Row 4 - Last 3 people -->
-    <div class="col-xs-2" style="border: none;">
+  <!-- Second row - 4 people on large screens, 2 per row on small screens -->
+  <div class="row large-screen-row-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
+      <a href="https://spa.snu.ac.kr/" style="text-decoration: none; border: none;">
+        <div class="organizer-img-container">
+          <img class="people-pic" src="static/img/people/organizers/junwon_choi.jpg" width="175" height="175" />
+        </div>
+      </a>
+      <div class="people-name" style="border: none;">
+        <a href="https://spa.snu.ac.kr/" style="text-decoration: none; border: none;">Jun Won Choi</a>
+        <h5>Seoul National University</h5>
+      </div>
+    </div>
+
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://www.omersahintas.com/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/omer_sahin_tas.jpg" width="175" height="175" />
@@ -579,7 +618,7 @@
       </div>
     </div>
 
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://ukcheolshin.github.io/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/ukcheol_shin.jpg" width="175" height="175" />
@@ -591,7 +630,7 @@
       </div>
     </div>
 
-    <div class="col-xs-2" style="border: none;">
+    <div class="person-col" style="border: none; margin-bottom: 30px;">
       <a href="https://urk.fei.stuba.sk/ustav/en/" style="text-decoration: none; border: none;">
         <div class="organizer-img-container">
           <img class="people-pic" src="static/img/people/organizers/michal_kovac.jpg" width="175" height="175" />
