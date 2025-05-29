@@ -511,3 +511,16 @@ body {
       margin-bottom: 50px;
     }
   }
+
+  /* Program Committee spacing */
+  #program-committee ul {
+    margin-bottom: 5px !important;
+    margin-top: 0 !important;
+  }
+  
+  #program-committee li {
+    margin-bottom: 2px !important;
+    line-height: 1.2 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
