@@ -524,3 +524,91 @@ body {
     padding-bottom: 0 !important;
     padding-top: 0 !important;
   }
+
+  /* Schedule table enhancements */
+  .schedule-wrap {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(16, 52, 124, 0.08);
+  }
+
+  .table.schedule-table {
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .schedule-table thead th {
+    position: sticky;
+    top: 0;
+    background: #f7f9fc;
+    z-index: 1;
+    border-bottom: 1px solid #e6ecf5 !important;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    vertical-align: middle !important;
+  }
+
+  .schedule-table .col-time {
+    white-space: nowrap;
+    width: 22%;
+    font-weight: 600;
+  }
+
+  .schedule-table .col-type {
+    width: 10%;
+    text-align: center;
+  }
+
+  .schedule-icon {
+    color: #10347c;
+    font-size: 16px;
+  }
+
+  .time-chip {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #eef3ff;
+    color: #10347c;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .schedule-table tbody tr:hover {
+    background-color: #fbfcff;
+  }
+
+  /* Style the Abstract toggle as a pill */
+  a.abstract {
+    display: inline-block;
+    padding: 2px 8px;
+    background: #f2f6ff;
+    border-radius: 999px;
+    font-size: 12px;
+    color: #10347c !important;
+    border: none !important;
+  }
+
+  .schedule-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    background: #e6ecf5;
+  }
+
+  @media (max-width: 767px) {
+    .schedule-table .col-type {
+      display: none;
+    }
+    .schedule-table .col-time {
+      width: 30%;
+    }
+    .time-chip {
+      font-size: 11px;
+    }
+  }
